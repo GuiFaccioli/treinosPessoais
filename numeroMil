@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite um número</title>
+    <script src="digiteUmNumero.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <h1> Digite um número
+
+        
+
+        <input type="number" id="numeroDigitado"> 
+        <button onclick="calcular()">Me informe</button>
+
+            <h3 id="mensagem"></h3>
+
+            <script>
+            function calcular() {
+
+    let numero = Number(document.getElementById("numeroDigitado").value);
+
+    if (numero > 1000) {
+        
+    (document.getElementById("mensagem").innerText="O número é maior que mil")
+        return;
+
+
+     } if (numero < 1000) {  
+     
+     (document.getElementById("mensagem").innerText="O número é menor que mil")
+    return;
+
+     } else if (numero===1000) {
+        (document.getElementById("mensagem").innerText="O número é mil")
+     return;
+    }
+
+     }
+
+             </script>
+</body>
+</html>
