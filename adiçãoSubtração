@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+  
+
+</head>
+<body>
+    <h1>Somando</h1>
+
+    
+    <input type="number" id="somaUm"> + 
+    <input type="number" id="somaDois"> 
+    <button onclick ="somar()"> Somar</button>
+    =
+    <input readonly id="resultado">
+
+
+    <h1>Subtraindo</h1>
+
+    <input type="number" id="subtracaoUm"> - 
+    <input type="number" id="subtracaoDois">
+    <button onclick ="subtracao()">Subtrair</button>
+    =
+    <input readonly id="resultadoSubtracao">
+
+    <script>
+              function somar() {
+        let valor1 = Number(document.getElementById("somaUm").value);
+        let valor2 = Number(document.getElementById("somaDois").value);
+
+         if (valor1 ===0 && valor2 ===0) {
+            alert ("Preencha as duas caixas")
+            return;
+        } 
+
+        
+        if  (valor1 ===0) { 
+            alert ("Preencha a primeira caixa")
+            return;
+        }
+
+        if (valor2 ===0) {
+            alert ("Preencha a segunda caixa")
+           return;
+        }
+
+       
+        const soma = valor1 + valor2;
+
+        document.getElementById("resultado").value = soma;
+     }
+
+
+
+     function subtracao() {
+        let subtracao1 = Number(document.getElementById("subtracaoUm").value);
+        let subtracao2 = Number(document.getElementById("subtracaoDois").value);
+        if (subtracao1 === 0 || subtracao2 === 0) {
+  alert("Um dos valores é zero");
+}
+
+        const menos = subtracao1 - subtracao2;
+
+        document.getElementById("resultadoSubtracao").value = menos;
+     }
+
+        </script>
+
+
+    
+  
+
+   
+    
+</body>
+</html>
