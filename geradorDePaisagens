@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de paisagens</title>
+      <style> 
+        .fotos {
+          width: 500px;
+          height: 500px;
+        }
+      </style>
+</head>
+<body>
+
+  <h1>Gerador de paisagens</h1>
+  <button onclick="trocarFotos()">Trocar foto</button>
+
+  <div id="galeria">
+    <img src="https://picsum.photos/500/500" class="fotos">
+    <img src="https://picsum.photos/600/400" class="fotos">
+    <img src="https://picsum.photos/800/600" class="fotos">
+    <img src="https://picsum.photos/1000/500" class="fotos">
+    <img src="https://picsum.photos/1000/500" class="fotos">
+    <img src="https://picsum.photos/1000/600" class="fotos">
+    <img src="https://picsum.photos/500/500" class="fotos">
+    <img src="https://picsum.photos/400/500" class="fotos">
+    <img src="https://picsum.photos/200/500" class="fotos">
+    <img src="https://picsum.photos/300/400" class="fotos">
+  </div>
+
+  <script>
+    let fotos = [];
+let atual = -1; // Variável para controlar qual imagem está visível
+
+// Carrega as imagens e as esconde inicialmente
+window.onload = function () {
+  fotos = document.querySelectorAll(".fotos");
+
+  // Esconde todas as imagens
+  fotos.forEach(img => img.style.display = "none");
+
+  // Exibe a primeira imagem
+  if (fotos.length > 0) {
+    atual = 0;
+    fotos[atual].style.display = "block";
+  }
+};
+
+// Função para trocar a imagem
+function trocarFotos() {
+  // Esconde a imagem atual
+  fotos[atual].style.display = "none";
+
+  // Escolhe uma nova imagem aleatória
+  let proxima;
+  do {
+    proxima = Math.floor(Math.random() * fotos.length);
+  } while (proxima === atual);
+
+  // Atualiza a variável 'atual'
+  atual = proxima;
+
+  // Mostra a nova imagem
+  fotos[atual].style.display = "block";
+}
+  </script>
+</body>
+</html>
