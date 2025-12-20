@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Pesquisa</title>
+
+    <script src="barraDePesquisa.js"></script>
+    <style>
+        ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.fruta {
+  width: 150px;
+  text-align: center;
+}
+
+.fruta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+    <h1> Hortifrutti </h1>
+    <input type="text" id="pesquisa" placeholder="Procure uma fruta"> 
+    <button onclick="pesquisar()">Pesquisar</button>
+<ul>
+<ul id="lista">
+  <li class="fruta">
+    <p>Banana</p>
+    <img src="https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Banana" id="banana">
+  </li>
+
+  <li class="fruta">
+    <p>Uva</p>
+    <img src="https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Uva" id="uva">
+  </li>
+
+  <li class="fruta">
+    <p>Pera</p>
+    <img src="https://images.pexels.com/photos/568471/pexels-photo-568471.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Pera" id="pera">
+  </li>
+
+  <li class="fruta">
+    <p>Maçã</p>
+    <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Maçã" id="maca">
+  </li>
+
+  <li class="fruta">
+    <p>Abacate</p>
+    <img src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Abacate" id="abacate">
+  </li>
+
+  <li class="fruta">
+    <p>Mamão</p>
+    <img src="https://images.pexels.com/photos/594608/pexels-photo-594608.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Mamão" id="mamao">
+  </li>
+
+  <li class="fruta">
+    <p>Manga</p>
+    <img src="https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Manga" id="manga">
+  </li>
+
+  <li class="fruta">
+    <p>Limão</p>
+    <img src="https://images.pexels.com/photos/952360/pexels-photo-952360.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Limão" id="limao">
+  </li>
+</ul>
+
+
+</ul>
+</body>
+</html>
+
