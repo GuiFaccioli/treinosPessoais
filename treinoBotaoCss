@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Botão</title>
+
+    <style>
+        .botaoX {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: center;
+            margin-left: 1000px;
+            margin-top: 500px;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+             background-color: #6a5acd; 
+    color: white;              
+    border: none;
+    border-radius: 12px;    
+        }
+        .botaoX:hover{
+
+                 transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mudarcor()" class="botaoX" id="botaoY"> OK </button>
+    
+</body>
+</html>
