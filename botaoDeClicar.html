@@ -7,24 +7,97 @@
     
   
 
-    <script src ="C:\Users\guifa\Desktop\Prog\treinosPessoais\botaoDeClicar.js"></script>
+    <script src ="botaoDeClicar.js"></script>
+    <style>
+      .botao {
+           display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    background-color: #7b6cff; /* roxo suave */
+    color: #ffffff;
+
+    border: none;
+    border-radius: 999px; /* formato pill (amigável) */
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(123, 108, 255, 0.35);
+
+    transition: all 0.25s ease;
+      }
+
+      .botao:hover{
+         transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(123, 108, 255, 0.45);
+      }
+    </style>
 
 </head>
 <body>
     
 
     <h1>Botão de Clicar</h1>
-  <button onclick="clicar1()">1</button>
-  <button onclick="clicar2()">2</button>
-  <button onclick="clicar3()">3</button>
-  <button onclick="clicar4()">4</button>
-  <button onclick="clicar5()">5</button>
-  <button onclick="clicar6()">6</button>
-  <button onclick="clicar7()">7</button>
-  <button onclick="clicar8()">8</button>
-  <button onclick="clicar9()">9</button>
+  <button onclick="clicar1()" div class="botao">1</button>
+  <button onclick="clicar2()" div class="botao">2</button>
+  <button onclick="clicar3()" div class="botao">3</button>
+  <button onclick="clicar4()" div class="botao">4</button>
+  <button onclick="clicar5()" div class="botao">5</button>
+  <button onclick="clicar6()" div class="botao">6</button>
+  <button onclick="clicar7()" div class="botao">7</button>
+  <button onclick="clicar8()" div class="botao">8</button>
+  <button onclick="clicar9()" div class="botao">9</button>
 
 <p id="mensagem">Clique em um número</p>
+
+    <script> 
+    function clicar1() {
+  document.getElementById("mensagem").innerText = "Você clicou no botão 1!";
+
+}
+
+function clicar2() {
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 2!"
+}
+
+function clicar3() {
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 3!"
+}
+
+function clicar4() {
+document.getElementById ("mensagem").innerText = "Você clicou no botão 4!"
+} 
+
+function clicar5() {
+
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 5!"
+}
+
+function clicar6() {
+
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 6!"
+}
+
+function clicar7() {
+
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 7!"
+}
+
+function clicar8() {
+
+    document.getElementById ("mensagem").innerText = "Você clicou no botão 8!"
+}
+
+function clicar9() {
+
+document.getElementById ("mensagem").innerText = "Você clicou no botão 9!"
+}
+    </script>
 
 
 </body>
