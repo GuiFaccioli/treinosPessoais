@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar cor do botao</title>
+    <style>
+
+        .corBotao {
+
+          display: flex;
+            align-items: center;
+            padding: 100px;
+            justify-content: center;
+            margin-left: 1000px;
+            margin-top: 500px;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+             background-color: #6a5acd; 
+    color: white;              
+    border: none;
+    border-radius: 50px;    
+
+        }
+
+        .corBotao:hover {
+
+            transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <button onmouseover="mudarCor()" onmouseout="voltarCor()" div class="corBotao" id="corBotao">  </button>
+  
+    
+
+    <script>
+
+      
+        
+
+function mudarCor() {
+     let cor1 = ["blue", "red", "orange", "green", "yellow", "purple"];
+
+    let sorteio = Math.floor(Math.random() * cor1.length);
+
+        document.getElementById("corBotao").style.backgroundColor = cor1[sorteio];
+        
+
+}
+
+function voltarCor() { 
+
+    document.getElementById("corBotao").style.backgroundColor = "orange";
+}
+
+    </script>
+    
+</body>
+</html>
