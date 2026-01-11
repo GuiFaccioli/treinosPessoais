@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação do time</title>
+</head>
+<body>
+    <div> 
+        <h2>Insira o nome do jogador:</h4>
+<input type="text" placeholder="Nome do jogador" id="nomeJogador">
+<button onclick="inserirNome()" id="inserirNomeJogador"> OK</button>
+
+<h3>Insira a posição do jogador:</h3>
+<input type="text" placeholder="Posição do jogador" id="posicaoJogador">
+<button onclick="inserirPosicao()"> OK</button>
+
+<h3>Numero da camisa do jogador:</h3>
+<input type="text" placeholder="Numero da camisa" id="numeroCamisa">
+<button onclick="inserirNumeroCamisa()">OK</button>
+    </div>
+</body>
+</html>
